@@ -1,0 +1,3 @@
+* vai na frente da label do campo.
+Não está claro, mas parece que quando o usuário digitar dentro do campo a Label irá sumir. Não recomendo que isso seja realizado.
+O botão OK e "X" para mim faz a mesma coisa e deixa confuso na interface. Um deles era para excluir? Em caso afirmativo, deve aparecer só um deles de acordo com o contexto desejado. Caso não for, faltou a relação de onde serão excluídos e/ou editados os itens.

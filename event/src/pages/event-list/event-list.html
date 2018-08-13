@@ -1,0 +1,35 @@
+<!--
+  Generated template for the EventListPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Eventos</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+    <ion-list>
+      <ion-item-sliding *ngFor="let evento of lista">
+        <ion-item  >
+          <ion-thumbnail item-start>
+            <img src="img/thumbnail-totoro.png">
+          </ion-thumbnail>
+          <h2>{{evento.titulo}}</h2>
+          <p>{{evento.descricao}}</p>
+        </ion-item>
+        <ion-item-options side="right" (click)="removeItem(evento.id)">
+          <button ion-button expandable color="danger" (click)="removeItem(evento.id)">
+            <ion-icon name="trash"></ion-icon>
+          </button>
+        </ion-item-options>
+      </ion-item-sliding>
+    </ion-list>
+    <ion-fab right bottom>
+      <button ion-fab color="blue" (click)='openFormDetail();' ><ion-icon name="add"></ion-icon></button>
+    </ion-fab>
+</ion-content>
